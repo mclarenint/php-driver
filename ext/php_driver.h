@@ -46,12 +46,9 @@ typedef int pid_t;
 #  error PHP 5.6.0 or later is required in order to build the driver
 #endif
 
-#if HAVE_SPL
+//SPL is always enabled in >5.6
 #  include <ext/spl/spl_iterators.h>
 #  include <ext/spl/spl_exceptions.h>
-#else
-#  error SPL must be enabled in order to build the driver
-#endif
 
 #include "version.h"
 
